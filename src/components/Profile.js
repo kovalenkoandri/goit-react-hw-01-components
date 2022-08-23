@@ -1,11 +1,11 @@
 const Profile = ({
-  user: {
-    avatar,
-    username,
-    tag,
-    location,
-    stats: { followers, views, likes },
-  },
+  avatar,
+  username,
+  tag,
+  location,
+  followers,
+  views,
+  likes,
 }) => (
   <div class="profile">
     <div class="description">
