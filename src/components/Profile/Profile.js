@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import urlPropType from 'url-prop-type';
 import Wrapper from './Wrapper.styled';
+const listStyled = {
+  listStyleType: 'none',  
+};
 const Profile = ({
   avatar,
   username,
@@ -18,7 +21,7 @@ const Profile = ({
       <p class="location">{location}</p>
     </div>
     <Wrapper>
-      <ul class="stats" style={{ listStyleType: 'none' }}>
+      <ul class="stats" style={ listStyled }>
         <li>
           <span class="label">Followers</span>
           <span class="quantity">{followers}</span>
