@@ -6,6 +6,8 @@ const Wrapper = styled.div`
   padding: 8px;
   border: 1px solid black;
   border-radius: 8px;
-  background-color: rebeccapurple;
+  // background-color: rebeccapurple;
+  list-style: 'none';
+
 `;
 export default Wrapper;
