@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './Statistics.module.css';
+// import styles from './Statistics.module.css';
 import data from 'components/Statistics/data';
 
 const statList = data.map(({ id, label, percentage }) => (
