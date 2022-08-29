@@ -1,0 +1,17 @@
+.statistics{
+    width: 480px;
+    height: 316px;
+    background-color: #eff3f6;
+}
+.title{
+    background-color: #fff;
+    width: 340px;
+    height: 88px;
+    text-align: center;
+}
+.statList{
+    display: grid;
+}
+.item{
+    display: grid;
+}

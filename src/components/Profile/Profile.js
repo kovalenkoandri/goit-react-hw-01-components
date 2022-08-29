@@ -11,9 +11,13 @@ const Profile = ({
   views,
   likes,
 }) => (
-  <div class="profile">
+  <div className="profile">
     <div class="description" className={styles.cards}>
-      <img src={avatar} alt={username} class="avatar" className={styles.avatar} />
+      <img
+        src={avatar}
+        alt={username}
+        className={styles.avatar}
+      />
       <p class="name" className={styles.card}>
         {username}
       </p>
