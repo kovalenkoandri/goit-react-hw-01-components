@@ -12,35 +12,25 @@ const Profile = ({
   likes,
 }) => (
   <div className="profile">
-    <div class="description" className={styles.cards}>
-      <img
-        src={avatar}
-        alt={username}
-        className={styles.avatar}
-      />
-      <p class="name" className={styles.card}>
-        {username}
-      </p>
-      <p class="tag" className={styles.card}>
-        {tag}
-      </p>
-      <p class="location" className={styles.card}>
-        {location}
-      </p>
+    <div className={styles.description}>
+      <img src={avatar} alt={username} className={styles.avatar} />
+      <p className={styles.name}>{username}</p>
+      <p className={styles.tag}>{tag}</p>
+      <p className={styles.location}>{location}</p>
     </div>
     {/* <Wrapper> */}
-    <ul class="stats" className={styles.cards}>
+    <ul className={styles.stats}>
       <li className={styles.card}>
-        <span class="label">Followers: </span>
-        <span class="quantity">{followers}</span>
+        <span className="label">Followers: </span>
+        <span className="quantity">{followers}</span>
       </li>
       <li className={styles.card}>
-        <span class="label">Views: </span>
-        <span class="quantity">{views}</span>
+        <span className="label">Views: </span>
+        <span className="quantity">{views}</span>
       </li>
       <li className={styles.card}>
-        <span class="label">Likes: </span>
-        <span class="quantity">{likes}</span>
+        <span className="label">Likes: </span>
+        <span className="quantity">{likes}</span>
       </li>
     </ul>
     {/* </Wrapper> */}

@@ -8,8 +8,8 @@ const statList = data.map(({ id, label, percentage }) => (
     <span className="percentage">{percentage}%</span>
   </li>
 ));
-const Statistics = ({ title }) => (
-  <section class="statistics">
+export const Statistics = ({ title }) => (
+  <section className="statistics">
     <h2 className="title">{title}</h2>
 
     <ul className="statList">{statList}</ul>
