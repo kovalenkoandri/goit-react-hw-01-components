@@ -14,4 +14,12 @@
 }
 .item{
     display: grid;
+    width: 100px;
+    height: 100px;
+}
+.label{
+    display: grid;
+}
+.percentage{
+    display: grid;
 }

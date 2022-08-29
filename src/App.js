@@ -10,20 +10,20 @@ const {
   stats: { followers, views, likes },
 } = user;
 function App() {
-  return [
-    <Profile
-      username={username}
-      tag={tag}
-      location={location}
-      avatar={avatar}
-      followers={followers}
-      views={views}
-      likes={likes}
-    />,
-    <Statistics
-      title="Upload stats"
-    />,
-  ];
+  return (
+    <>
+      <Profile
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        followers={followers}
+        views={views}
+        likes={likes}
+      />
+      <Statistics title="Upload stats" />
+    </>
+  );
 }
 
 export default App;

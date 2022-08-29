@@ -1,18 +1,32 @@
 import PropTypes from 'prop-types';
-// import styles from './Statistics.module.css';
+import styles from './Statistics.module.css';
 import data from 'components/Statistics/data';
-
-const statList = data.map(({ id, label, percentage }) => (
-  <li className="item" key={id}>
-    <span className="label">{label}: </span>
-    <span className="percentage">{percentage}%</span>
-  </li>
-));
+// const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+// document.body.style.backgroundColor = '#' + randomColor;
+const MyComponents = {
+  DatePicker: function DatePicker(props) {
+    return <div>Imagine a {props.color} datepicker here.</div>;
+  },
+};
+function BlueDatePicker() {
+  return <MyComponents.DatePicker color="blue" />;
+}
+const statList = data.map(({ id, label, percentage }, idx) => {
+  return (
+    <li key={idx.toString()} className={styles.item}>
+      {console.log(id)}
+      {console.log(idx)}
+      <span className={styles.label}>{label}: </span>
+      {BlueDatePicker()}
+      <span className={styles.percentage}>{percentage}%</span>
+    </li>
+  );
+});
 export const Statistics = ({ title }) => (
-  <section className="statistics">
-    <h2 className="title">{title}</h2>
+  <section className={styles.statistics}>
+    <h2 className={styles.title}>{title}</h2>
 
-    <ul className="statList">{statList}</ul>
+    <ul className={styles.statList}>{statList}</ul>
   </section>
 );
 export default Statistics;
