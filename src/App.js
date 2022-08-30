@@ -22,6 +22,7 @@ function App() {
         likes={likes}
       />
       <Statistics title="Upload stats" />
+      {/* <FriendList friends /> */}
     </>
   );
 }
