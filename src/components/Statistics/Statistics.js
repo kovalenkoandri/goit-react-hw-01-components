@@ -11,13 +11,10 @@ const MyComponents = {
 function BlueDatePicker() {
   return <MyComponents.DatePicker color="blue" />;
 }
-const statList = data.map(({ id, label, percentage }, idx) => {
+const statList = data.map(({ id, label, percentage }) => {
   return (
-    <li key={idx.toString()} className={styles.item}>
-      {console.log(id)}
-      {console.log(idx)}
+    <li key={id} className={styles.item}>
       <span className={styles.label}>{label}: </span>
-      {BlueDatePicker()}
       <span className={styles.percentage}>{percentage}%</span>
     </li>
   );
