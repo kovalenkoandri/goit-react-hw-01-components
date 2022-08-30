@@ -2,6 +2,8 @@ import './App.css';
 import Profile from 'components/Profile/Profile';
 import user from 'components/Profile/user';
 import Statistics from 'components/Statistics/Statistics';
+import FriendList from 'components/FriendList/FriendList';
+import friends from 'components/FriendList/friends';
 const {
   avatar,
   username,
@@ -22,7 +24,7 @@ function App() {
         likes={likes}
       />
       <Statistics title="Upload stats" />
-      {/* <FriendList friends /> */}
+      <FriendList friends={friends} />
     </>
   );
 }
