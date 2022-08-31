@@ -1,0 +1,28 @@
+.friendList {
+  width: 440px;
+  border: var(--border);
+  margin-top: var(--margin-top);
+  margin-left: auto;
+  margin-right: auto;
+}
+.item {
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  justify-items: center;
+  align-items: center;
+  box-shadow: 5px 5px 18px 2px rgba(0, 0, 0, 0.3);
+  margin-top: var(--margin-top);
+}
+.item:first-child {
+    margin-top: 0;
+}
+.status {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.name {
+  display: inline-block;
+  font-size: var(--font-size-big);
+}

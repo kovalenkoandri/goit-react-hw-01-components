@@ -17,6 +17,7 @@ const statList = data.map(({ id, label, percentage }) => {
 });
 export default statList;
 statList.propTypes = {
+  // how to make it work
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };
