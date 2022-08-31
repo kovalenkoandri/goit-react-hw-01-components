@@ -27,9 +27,13 @@ const FriendList = ({ friends }) => {
   );
 };
 export default FriendList;
-// FriendListItem.propTypes = { // how to make it work
-//   avatar: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-//   isOnline: PropTypes.bool.isRequired,
-//   id: PropTypes.number.isRequired,
-// };
+FriendListItem.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.boolean.isRequired,
+    }),
+  ),
+};
