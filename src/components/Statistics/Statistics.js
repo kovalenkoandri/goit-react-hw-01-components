@@ -1,12 +1,11 @@
 import styles from './Statistics.module.css';
-import statList from './statList';
+import StatList from './statList';
 
-const Statistics = ({ title } ) => (
+const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
     <h2 className={styles.title}>{title}</h2>
 
-    <ul className={styles.statList}>{statList}</ul>
+    <ul className={styles.statList}><StatList stats={stats} /></ul>
   </section>
 );
 export default Statistics;
-

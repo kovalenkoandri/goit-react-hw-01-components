@@ -1,6 +1,7 @@
 import './App.css';
 import Profile from 'components/Profile/Profile';
 import user from 'components/Profile/user';
+import data from 'components/Statistics/data';
 import Statistics from 'components/Statistics/Statistics';
 import FriendList from 'components/FriendList/FriendList';
 import friends from 'components/FriendList/friends';
@@ -24,8 +25,8 @@ function App() {
         followers={followers}
         views={views}
         likes={likes}
-      />
-      <Statistics title="Upload stats" /> */}
+      />*/}
+      <Statistics title="Upload stats" stats={data} /> 
       <FriendList friends={friends} /> 
       {/* <TransactionHistory items={transactions} /> */}
     </>
