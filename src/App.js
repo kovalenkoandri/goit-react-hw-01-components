@@ -4,6 +4,8 @@ import user from 'components/Profile/user';
 import Statistics from 'components/Statistics/Statistics';
 import FriendList from 'components/FriendList/FriendList';
 import friends from 'components/FriendList/friends';
+import transactions from 'components/TransactionHistory/transactions';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 const {
   avatar,
   username,
@@ -14,7 +16,7 @@ const {
 function App() {
   return (
     <>
-      <Profile
+      {/* <Profile
         username={username}
         tag={tag}
         location={location}
@@ -24,7 +26,9 @@ function App() {
         likes={likes}
       />
       <Statistics title="Upload stats" />
-      <FriendList friends={friends} />
+      <FriendList friends={friends} /> */}
+      {/* <TransactionHistory  /> */}
+      <TransactionHistory items={transactions} />
     </>
   );
 }
