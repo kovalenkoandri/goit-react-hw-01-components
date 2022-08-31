@@ -2,7 +2,7 @@ import styles from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 const StatList = ({ stats }) =>
-stats.map(({ id, label, percentage }) => (
+  stats.map(({ id, label, percentage }) => (
     <li
       key={id}
       className={styles.item}
@@ -16,8 +16,12 @@ stats.map(({ id, label, percentage }) => (
     </li>
   ));
 export default StatList;
-// StatList.propTypes = {
-//   // how to make it work
-//   label: PropTypes.string.isRequired,
-//   percentage: PropTypes.number.isRequired,
-// };
+StatList.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      label: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+};
