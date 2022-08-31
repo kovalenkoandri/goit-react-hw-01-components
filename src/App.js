@@ -17,7 +17,7 @@ const {
 function App() {
   return (
     <>
-       {/* <Profile
+       <Profile
         username={username}
         tag={tag}
         location={location}
@@ -25,10 +25,10 @@ function App() {
         followers={followers}
         views={views}
         likes={likes}
-      />*/}
+      />
       <Statistics title="Upload stats" stats={data} /> 
       <FriendList friends={friends} /> 
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </>
   );
 }

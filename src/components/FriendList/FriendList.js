@@ -33,7 +33,7 @@ FriendListItem.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       id: PropTypes.number.isRequired,
-      isOnline: PropTypes.boolean.isRequired,
+      isOnline: PropTypes.bool.isRequired,
     }),
   ),
 };
